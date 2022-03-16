@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class = "heading"> Home Page </h1>
+        <nav>
+            <a href = "#" target = "_self"> Home </a>
+            <a href = "AboutUs.html" target = "_self"> About Us </a>
+            <a href = "ContactUs.html" target = "_self"> Contact Us </a>
+            <a href = "SignUp.html" target = "_self"> Sign Up </a>
+            <a href = "SignIn.html" target = "_self"> Sign In </a>
+        </nav>
+</header>
+<section>
+    <div>
+        <button onclick = "GetProductList()"> Get Products </button>
+        <ul id = "ProductList"></ul>
+    </div>
+    <div>
+        <input type = "text" name = "ProductID" id = "ProductID" size = "30" placeholder = "Enter Product ID For Example P101.">
+        <button onclick = "GetProductByProductID()"> Get The Product </button>
+        <button id = "getProductButton"> Button 2 </button>
+        <h1 id = "product"></h1>
+    </div>
+</section>
+<footer>
+    <h6 class = "heading"> Mastek &copy; 2022 </h6>
+</footer>
+<script src = "Main.js"></script>
+</body>
+</html>
