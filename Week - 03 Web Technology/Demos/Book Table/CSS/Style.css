@@ -1,0 +1,31 @@
+.Division 
+{
+    padding-top : 10px;
+    height : auto;
+}
+.table 
+{
+    border-spacing : 0;
+    width : 40%;
+    display : table;
+    border : 1px solid rgb(247, 244, 244);
+    margin-left : auto;
+    margin-right : auto;
+    text-align : left;
+}
+.table th , td 
+{
+    padding : 8px 8px;
+    display : table-cell;
+    text-align : left;
+    vertical-align : top;
+}
+th , td 
+{
+    border : 1px solid #999;
+    padding : 0.5rem;
+}
+.table tr 
+{
+    border-bottom : 1px solid rgb (12, 12, 12);
+}

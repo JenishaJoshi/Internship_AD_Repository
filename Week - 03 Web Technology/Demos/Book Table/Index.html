@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Book </title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class = "Division" id = "DivisionAdd">
+        <form id = "FormAdd" name = "Forms" class = "Container Card">
+            <label> Book ID : </label>
+            <input type = "text" id = "BookIDAdd" class = "forminput" placeholder = "Enter The Book ID." required> &nbsp;
+            <label> Book Name :  </label>
+            <input type = "text" id = "BookNameAdd" class = "forminput" placeholder = "Enter The Book Name." required> &nbsp;
+            <label> Author Name :  </label>
+            <input type = "text" id = "AuthorNameAdd" class = "forminput" placeholder = "Enter The Author Name." required> &nbsp;
+            <label> Book Price :  </label>
+            <input type = "text" id = "BookPriceAdd" class = "forminput" placeholder = "Enter The Book Price." required> &nbsp;
+            <button type = "submit" id = "SubmitAdd" class = "btn"> Add </button>
+        </form>
+    </div>
+    <div class = "Division" id = "DivisionUpdate" hidden>
+        <form id = "FormUpdate" name = "Forms" class = "Container Card">
+            <label> Book ID : </label>
+            <input type = "text" id = "BookIDUpdate" class = "forminput" required readonly> &nbsp;
+            <label> Book Name :  </label>
+            <input type = "text" id = "BookNameUpdate" class = "forminput" required> &nbsp;
+            <label> Author Name :  </label>
+            <input type = "text" id = "AuthorNameUpdate" class = "forminput" required> &nbsp;
+            <label> Book Price :  </label>
+            <input type = "text" id = "BookPriceUpdate" class = "forminput" required> &nbsp;
+            <button type = "submit" id = "SubmitUpdate" class = "btn"> Update </button>
+      </div>
+      <br>
+      <div id = "DivisionTable" hidden>
+      <table class = "table" id = "Table">
+        <thead>
+          <tr class = "TableRows">
+            <th nowrap> Select </th>
+            <th nowrap> Book ID </th>
+            <th nowrap> Book Name </th>
+            <th nowrap> Author Name </th>
+            <th nowrap> Book Price </th>
+            <th nowrap> Edit </th>
+            <th nowrap> Delete </th>
+          </tr>
+        </thead>
+        <tbody id = "TableBody"> </tbody>
+      </table>
+    </div>
+    <script src = "https://code.jquery.com/jquery-3.6.0.js" integrity = "sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk = " crossorigin = "anonymous"> </script>
+    <script src = "JQuery.js"> </script>
+</body>
+</html>
