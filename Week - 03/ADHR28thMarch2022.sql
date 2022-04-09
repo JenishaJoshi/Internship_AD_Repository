@@ -1,0 +1,7 @@
+CREATE TABLE Emp0 (Id NUMBER (10) , Name VARCHAR2 (30) , Salary NUMBER (7 , 2));
+
+INSERT INTO Emp0 VALUES (121 , 'Rahul' , '50000.00');
+
+INSERT INTO Emp0 VALUES (122 , 'Rajiv' , '23000.00');
+
+COMMIT;

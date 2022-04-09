@@ -1,0 +1,20 @@
+CREATE TABLE Emp (Id NUMBER (10) , Name VARCHAR2 (50)); 
+
+CREATE TABLE EmployeeInsertNRows (Id NUMBER (10) , Name VARCHAR2 (50) , Salary NUMBER (10));
+
+CREATE OR REPLACE PROCEDURE "INSERTR" (Id IN NUMBER , Name IN VARCHAR2)
+IS
+BEGIN
+	INSERT INTO UserTable VALUES (Id , Name);
+END;
+
+CREATE TABLE UserTable (Id NUMBER (10) , Name VARCHAR2 (200));
+
+CREATE OR REPLACE FUNCTION SumTotal (Number1 IN NUMBER , Number2 IN NUMBER)  
+RETURN NUMBER  
+IS   
+temp NUMBER (8);  
+BEGIN  
+    temp := Number1 + Number2;  
+    return temp;  
+END;
